@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal (jika diperlukan) */
+    height: 100vh; /* Mengatur tinggi container untuk memusatkan secara vertikal */
+}
+iframe {
+    border: 0; /* Menghapus border */
+}
+html {
+    scroll-behavior: smooth;
+  }
+        /* CSS untuk Section Penjelasan */
+#penjelasan {
+    background-color: #f7fafc; /* Warna latar belakang abu-abu muda */
+    padding: 2rem 1rem; /* Padding atas dan bawah */
+}
+
+#penjelasan h2 {
+    color: #2d3748; /* Warna teks judul */
+    font-size: 1.75rem; /* Ukuran font judul */
+    margin-bottom: 1rem; /* Margin bawah judul */
+}
+
+#penjelasan p {
+    color: #4a5568; /* Warna teks deskripsi */
+    margin-bottom: 1.5rem; /* Margin bawah deskripsi */
+}
+
+#penjelasan .bg-white {
+    transition: transform 0.2s; /* Transisi untuk efek hover */
+}
+
+#penjelasan .bg-white:hover {
+    transform: scale(1.05); /* Efek memperbesar saat hover */
+}
+
+#penjelasan h3 {
+    color: #2b6cb0; /* Warna teks sub-judul */
+    font-size: 1.25rem; /* Ukuran font sub-judul */
+    margin-bottom: 0.5rem; /* Margin bawah sub-judul */
+}
+
+#penjelasan p.text-gray-700 {
+    color: #4a5568; /* Warna teks isi */
+}
+
+/* Responsif */
+@media (min-width: 640px) {
+    #penjelasan .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar kecil */
+    }
+}
+
+@media (min-width: 768px) {
+    #penjelasan .grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar menengah */
+    }
+}
+
+  
